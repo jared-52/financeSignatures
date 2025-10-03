@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>2Accept — Team Email Signatures (compact)</title>
+<title>2Accept — Team Email Signatures (compact, larger logo)</title>
 <style>
   body{font:13px/1.35 Arial,Helvetica,sans-serif;background:#fff;margin:20px;color:#111}
   h1{font-size:18px;margin:0 0 14px}
@@ -44,7 +44,7 @@ const TEAM = [
   { name: "Jennifer Garcia",    email: "jennifer@2accept.com",  phone: "783-486-6366", website: "https://www.2accept.com" }
 ];
 
-/*** 3) Signature HTML (compact) ***/
+/*** 3) Signature HTML (compact, larger logo) ***/
 function signatureHtml(person){
   const websiteText  = (person.website || "").replace(/^https?:\/\//,'');
   const phoneDigits  = (person.phone || "").replace(/[^0-9]/g,'');
@@ -54,7 +54,7 @@ function signatureHtml(person){
   <tr>
     <!-- Left: Logo & Tagline -->
     <td style="padding-right:16px;border-right:1px solid #cccccc;vertical-align:middle;text-align:center;">
-      <img src="${ASSETS.logo}" alt="2Accept Logo" style="height:48px;display:block;margin:0 auto;">
+      <img src="${ASSETS.logo}" alt="2Accept Logo" style="height:60px;display:block;margin:0 auto;">
       <div style="font-size:11px;color:#C33E8B;margin-top:3px;text-align:center;">
         Payment Processing Solutions
       </div>
